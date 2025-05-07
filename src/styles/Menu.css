@@ -1,0 +1,27 @@
+.menu-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #5a3e36;
+}
+
+.menu-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #bf5a3f;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(191, 90, 63, 0.3);
+}
+
+@media (max-width: 600px) {
+  .category-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr; /* Stack items on small screens */
+  }
+}
