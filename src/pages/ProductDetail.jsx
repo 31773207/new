@@ -1,6 +1,9 @@
 //Product Details Page
 //Display a larger image, name, price, views, sold count, reviews with star ratings, comments, and "Add to Cart" button.
+//Product Details Page
+//Display a larger image, name, price, views, sold count, reviews with star ratings, comments, and "Add to Cart" button.
 // src/pages/ProductDetail.jsx
+ 
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
@@ -42,19 +45,26 @@ const ProductDetail = () => {
   const { products, addToCart, incrementViewCount } = useContext(CartContext);
   const product = products.find((p) => p.id === parseInt(id));
 
-  const [reviews, setReviews] = useState(product ? product.reviews : []);
+  const [reviews, setReviews] = useState([]);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [hasViewed, setHasViewed] = useState(false);
 
   useEffect(() => {
-    if (product && !hasViewed) {
-      incrementViewCount(product.id);
-      setHasViewed(true);
+    if (product) {
+      // Load reviews from local storage
+      const storedReviews = JSON.parse(localStorage.getItem(`reviews_${product.id}`)) || [];
+      setReviews(storedReviews);
+
+      // Increment view count
+      const storedViewCount = localStorage.getItem(`views_${product.id}`) || 0;
+      if (!hasViewed) {
+        incrementViewCount(product.id);
+        localStorage.setItem(`views_${product.id}`, parseInt(storedViewCount) + 1);
+        setHasViewed(true);
+      }
     }
   }, [product, incrementViewCount, hasViewed]);
-
-  if (!product) return <p>Product not found.</p>;
 
   const handleAddReview = () => {
     if (comment.trim() === "") return;
@@ -62,24 +72,28 @@ const ProductDetail = () => {
       alert("Please select a rating before submitting your review.");
       return;
     }
-    setReviews([...reviews, { rating, comment }]);
+    const newReview = { rating, comment };
+    const updatedReviews = [...reviews, newReview];
+    setReviews(updatedReviews);
     setRating(0);
     setComment("");
+
+    // Save reviews to local storage
+    localStorage.setItem(`reviews_${product.id}`, JSON.stringify(updatedReviews));
   };
+
+  if (!product) return <p>Product not found.</p>;
 
   return (
     <div className="product-detail">
       <img src={product.image} alt={product.name} className="large-image" />
       <h2>{product.name}</h2>
-      {/* Display product description */}
- <div className="product-description">
+      <div className="product-description">
         <p>{product.description}</p>
       </div>
       <p>Price: {product.price} ₫</p>
-      <p>Views: {product.views}</p>
+      <p>Views: {localStorage.getItem(`views_${product.id}`) || 0}</p>
       <p>Sold: {product.sold}</p>
-
- 
 
       <button onClick={() => addToCart(product)}>Add to Cart</button>
 

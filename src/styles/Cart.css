@@ -12,7 +12,7 @@
 .cart-page h2 {
   font-size: 2rem;
   text-align: center;
-  color: #2ba9ad;
+  color: #d94f4f;
   margin-bottom: 30px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .cart-item button {
-  background-color: #2ba9ad;
+  background-color: #d94f4f;
   color: white;
   border: none;
   padding: 8px 14px;
@@ -74,7 +74,7 @@
 }
 
 .cart-item button:hover {
-  background-color: #1f7a7a;
+  background-color: #c47f7f;
   box-shadow: 0 6px 16px rgba(31, 122, 122, 0.8);
 }
 
@@ -89,7 +89,7 @@ h3 {
   font-size: 1.8rem;
   margin-top: 25px;
   font-weight: 700;
-  color: #2ba9ad;
+  color: #d94f4f;
 }
 /* Responsive */
 @media (max-width: 600px) {
@@ -104,7 +104,7 @@ h3 {
   }
 }
 .checkout-button {
-  background-color: #2ba9ad;
+  background-color: #d94f4f;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -120,6 +120,6 @@ h3 {
 }
 
 .checkout-button:hover {
-  background-color: #1f7a7a;
-  box-shadow: 0 6px 16px rgba(31, 122, 122, 0.8);
+  background-color: #c47f7f;
+  box-shadow: 0 6px 16px #c47f7f(31, 122, 122, 0.8);
 }
