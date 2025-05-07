@@ -1,18 +1,21 @@
 //main pages like Home, ProductDetail, Cart 
 //Home Page to Display All Products
 // src/pages/Home.jsx
+// src/pages/Home.jsx
 import React, { useContext } from "react";
 import ItemCard from "../components/ItemCard";
 import { CartContext } from "../context/CartContext";
-import NewArrival from "../components/NewArrival";
 import "../styles/Home.css";
 
-const Home = ({ searchTerm }) => {
+const Home = ({ searchTerm }) => { // ✅ Accept searchTerm as a prop
   const { products } = useContext(CartContext);
 
-  const filteredProducts = products.filter(product =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // ✅ Filter only new products and apply search
+  const filteredNewArrivals = products
+    .filter(product => product.isNew)
+    .filter(product =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   return (
     <>
@@ -23,17 +26,18 @@ const Home = ({ searchTerm }) => {
         </div>
       </div>
 
-      <div className="product-grid">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map(product => (
-            <ItemCard key={product.id} product={product} />
-          ))
-        ) : (
-          <p>No products match your search.</p>
-        )}
+      <div className="new-arrival">
+        <h2>New Arrivals</h2>
+        <div className="product-grid">
+          {filteredNewArrivals.length > 0 ? (
+            filteredNewArrivals.map(product => (
+              <ItemCard key={product.id} product={product} />
+            ))
+          ) : (
+            <p>No new arrivals match your search.</p>
+          )}
+        </div>
       </div>
-
-      <NewArrival />
     </>
   );
 };

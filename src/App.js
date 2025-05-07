@@ -44,6 +44,7 @@ function App() {
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<AboutUs />} /> {/* Add AboutUs route */}
+            <Route path="/" element={<Home searchTerm={searchTerm} />} />
           </Routes>
         </main>
         <Footer />

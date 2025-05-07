@@ -71,9 +71,15 @@ const ProductDetail = () => {
     <div className="product-detail">
       <img src={product.image} alt={product.name} className="large-image" />
       <h2>{product.name}</h2>
+      {/* Display product description */}
+ <div className="product-description">
+        <p>{product.description}</p>
+      </div>
       <p>Price: {product.price} ₫</p>
       <p>Views: {product.views}</p>
       <p>Sold: {product.sold}</p>
+
+ 
 
       <button onClick={() => addToCart(product)}>Add to Cart</button>
 

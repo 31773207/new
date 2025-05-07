@@ -1,13 +1,13 @@
 // src/components/NewArrival.jsx
 import React, { useContext } from "react";
-import ItemCard from "./ItemCard";
+import ItemCard from "./ItemCard"; // Assuming ItemCard is the reusable component that displays product info
 import { CartContext } from "../context/CartContext";
 
 const NewArrival = () => {
   const { products } = useContext(CartContext);
 
-  // Filter products to show only new arrivals
-  const newArrivals = products.filter(product => product.isNew || product.views < 10);
+  // Filter products to show only those that are marked as 'isNew: true'
+  const newArrivals = products.filter(product => product.isNew);
 
   return (
     <div className="new-arrival">
@@ -26,4 +26,3 @@ const NewArrival = () => {
 };
 
 export default NewArrival;
-
