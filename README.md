@@ -136,6 +136,3 @@ Saves cart items in the localStorage, ensuring that items are retained even afte
 
  B1
 
-Thank you for your time and consideration. Please let me know if you have any questions or need further information.
-
-Best regards,
