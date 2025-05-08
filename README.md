@@ -51,7 +51,7 @@ To run the Eat & Love & Repeat project locally, follow these steps:
 
 2.Open the project in Visual Studio Code by running:
 
-   code .
+     code .
 
 This command will open the current directory (.) in Visual Studio Code.
 
