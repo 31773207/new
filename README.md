@@ -41,7 +41,7 @@ To run the Eat & Love & Repeat project locally, follow these steps:
 
 3.Clone the repository by running the following command:
 
-   git clone https://github.com/31773207/new.git
+     git clone https://github.com/31773207/new.git
 
 **Step 2: Open the Repository in VS Code**
 
