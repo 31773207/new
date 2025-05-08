@@ -27,54 +27,48 @@ Eat & Love & Repeat is an interactive and dynamic e-commerce application built w
 7. **Responsive Design:**
    The app is fully responsive, ensuring it works well on desktops, tablets, and smartphones.
 
-## Setup Instructions
+### Setup Instructions
 
-To run the Eat & Love & Repeat project locally, follow these steps:
+✅Step-by-Step Instructions 
 
-**Step 1: Clone the Repository to Your Local Machine**
+**Step 1: Open VS Code**
+Launch Visual Studio Code on your machine.
 
-1.Open your terminal or command prompt.
+**Step 2: Clone the Git Repository via VS Code**
 
-2.Navigate to the directory where you want to store the project. For example:
+Click on “Source Control” icon (🔃) on the left sidebar, or press Ctrl + Shift + G.
 
-    cd C:\Users\new
+Click the “Clone Repository” button or the “Clone Git Repository...” link.
 
-3.Clone the repository by running the following command:
+Paste this URL when prompted:
 
-     git clone https://github.com/31773207/new.git
+     https://github.com/31773207/new.git
+     
+Choose a folder where you want to save the project.
 
-**Step 2: Open the Repository in VS Code**
-
-1.After cloning, navigate to the folder that contains the project:
-
-    cd new
-
-2.Open the project in Visual Studio Code by running:
-
-     code .
-
-This command will open the current directory (.) in Visual Studio Code.
+Once the cloning is finished, a pop-up will appear — click “Open” to open the project folder.
 
 **Step 3: Install Dependencies**
 
-If the project has a package.json file and you need to install dependencies, run the following command in the integrated terminal in VS Code:
+Open a new terminal inside VS Code:
 
-    npm install
+      Terminal > New Terminal
 
-This will install all required packages listed in the package.json file.   
+Make sure you're in the root project folder (where package.json is located), then run:
 
-**step 4:Start the Development Server:**
+        npm install
+        
+**Step 4: Start the Development Server**
 
-Launch the application by starting the development server with the following command:
+In the same terminal, run:
 
-      npm start
+         npm start
+         
+**Step 5: Open the App in Your Browser**
 
-**step 5:Open the Application in a Browser:**
-Once the server is running, open your web browser and navigate to:
-
-      http://localhost:3000
-
-You should see the Eat & Love & Repeat application running locally.
+       http://localhost:3000
+       
+You should now see the Eat & Love & Repeat app running locally 🎉   
 
 ## Features Implemented
 Core Features:
