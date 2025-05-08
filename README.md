@@ -6,7 +6,7 @@ Eat & Love & Repeat is an interactive and dynamic e-commerce application built w
 
 ### Key Features of the App:
 
-1. **User-Friendly Interface:**
+1.**User-Friendly Interface:**
    The application provides an intuitive, visually appealing interface that makes it easy for users to navigate through the menu and find their favorite dishes.
 
 2. **Product Browsing:**
@@ -33,14 +33,17 @@ To run the Eat & Love & Repeat project locally, follow these steps:
 
 1. **Clone the GitHub Repository:**
    Open your terminal and run the following command to clone the repository to your local machine:
+   
    git clone [https://github.com/yourusername/eat-love-repeat.git](https://github.com/31773207/eat.git)
    
 2.**Navigate to the Project Directory:**
 Change into the project directory using the following command:
+
 cd eat-love-repeat
 
 3.**Install Dependencies:**
 Install the required dependencies using npm (Node Package Manager) by running:
+
 npm install
 
 4.**Start the Development Server:**
@@ -111,6 +114,7 @@ The node_modules/ folder is excluded in the .gitignore file.
 The project is pushed to a public GitHub repository with a clear commit history.
 A well-written README.md file is included.
 GitHub Repository Link
+
 [GitHub Repository Link](https://github.com/31773207/eat)
 
 **Group Members**
