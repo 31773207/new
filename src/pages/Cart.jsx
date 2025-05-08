@@ -23,7 +23,7 @@ const Cart = () => {
           <img src={item.image} alt={item.name} className="cart-img" />
           <div>
             <h4>{item.name}</h4>
-            <p>Price: {item.price} ₫</p>
+            <p>Price: {item.price} DZD</p>
             <p>Quantity: {item.quantity}</p>
             <button onClick={() => increaseQuantity(item.id)}>+</button>
             <button onClick={() => decreaseQuantity(item.id)}>-</button>
@@ -31,7 +31,7 @@ const Cart = () => {
           </div>
         </div>
       ))}
-      <h3>Total: {total} ₫</h3>
+      <h3>Total: {total} DZD</h3>
       <button className="checkout-button" onClick={() => alert(`Proceeding to checkout with total: ${total} ₫`)}>
         Proceed to Checkout
       </button>

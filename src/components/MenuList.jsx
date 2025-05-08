@@ -1,5 +1,4 @@
 // src/components/MenuList.jsx
-// src/components/MenuList.jsx
 import React from "react";
 import ItemCard from "./ItemCard";
 import "./MenuList.css"

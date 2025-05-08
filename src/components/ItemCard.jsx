@@ -1,9 +1,4 @@
 // is a reusable React component that displays information about one product.
-// src/components/ItemCard.jsx
-// src/components/ItemCard.jsx
-// src/components/ItemCard.jsx
-// src/components/ItemCard.jsx
-// src/components/ItemCard.jsx
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";

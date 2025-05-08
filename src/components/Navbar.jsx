@@ -6,7 +6,7 @@ import "../styles/Navbar.css";
 import Logo from "../assets/photo_2025-05-07_09-58-26.jpg";
 
 
-const Navbar = ({ searchTerm, setSearchTerm }) => {
+const Navbar = ({ searchTerm, setSearchTerm, user, setShowLogin, handleLogout }) => {
   const { cartItems } = useContext(CartContext);
   const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -42,9 +42,17 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         <Link to="/cart" className="cart-link">
           Cart <span className="cart-count">({totalQuantity})</span>
         </Link>
+
+        {/* ✅ ADD THIS: Login/Logout Button */}
+        {user ? (
+          <button className="auth-button" onClick={handleLogout}>Logout</button>
+        ) : (
+          <button className="auth-button" onClick={() => setShowLogin(true)}>Login</button>
+        )}
       </div>
     </nav>
   );
 };
+
 
 export default Navbar;

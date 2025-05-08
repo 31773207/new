@@ -102,7 +102,7 @@
 
 .item-card p {
   font-weight: 600;
-  color: #ff6b6baa;
+  color: #cd5959aa;
   margin-bottom: 12px;
 
 }
@@ -114,14 +114,14 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  background: #fff;
+  background: #cd5959aa;
 }
 
 .item-card-content {
   flex-grow: 1;
 }
 .item-card button {
-  background: #ff6b6baa;
+  background: #cd5959aa;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -130,10 +130,12 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
   margin-top: auto; /* Pushes button to bottom inside the card */
+
 }
 
 .item-card button:hover {
   background: #ff6b6baa;
+  
   
 }
 
@@ -142,7 +144,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #ff4757; /* Bright color */
+  background-color:#ff6b6baa; /* Bright color */
   color: white;
   padding: 5px 10px;
   border-radius: 12px;
