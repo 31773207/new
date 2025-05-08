@@ -36,7 +36,7 @@ To run the Eat & Love & Repeat project locally, follow these steps:
 
 2.Navigate to the directory where you want to store the project. For example:
 
-cd C:\Users\work
+   cd C:\Users\user
 
 3.Clone the repository by running the following command:
 
