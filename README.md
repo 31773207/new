@@ -32,6 +32,7 @@ Eat & Love & Repeat is an interactive and dynamic e-commerce application built w
 To run the Eat & Love & Repeat project locally, follow these steps:
 
 **Step 1: Clone the Repository to Your Local Machine**
+
 1.Open your terminal or command prompt.
 
 2.Navigate to the directory where you want to store the project. For example:
