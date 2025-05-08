@@ -126,7 +126,7 @@ Displays a "New Arrival" badge on dishes with fewer than 10 views, signaling new
 4.**Persistent Cart:**
 Saves cart items in the localStorage, ensuring that items are retained even after refreshing the page.
 
-###Submission Guidelines:
+### Submission Guidelines:
 The node_modules/ folder is excluded in the .gitignore file.
 The project is pushed to a public GitHub repository with a clear commit history.
 A well-written README.md file is included.
