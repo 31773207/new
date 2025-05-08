@@ -45,11 +45,11 @@ git clone https://github.com/31773207/new.git
 
 1.After cloning, navigate to the folder that contains the project:
 
-cd new
+    cd new
 
 2.Open the project in Visual Studio Code by running:
 
-code .
+   code .
 
 This command will open the current directory (.) in Visual Studio Code.
 
@@ -57,7 +57,7 @@ This command will open the current directory (.) in Visual Studio Code.
 
 If the project has a package.json file and you need to install dependencies, run the following command in the integrated terminal in VS Code:
 
-npm install
+    npm install
 
 This will install all required packages listed in the package.json file.   
 
@@ -65,12 +65,12 @@ This will install all required packages listed in the package.json file.
 
 Launch the application by starting the development server with the following command:
 
-npm start
+      npm start
 
 **step 5:Open the Application in a Browser:**
 Once the server is running, open your web browser and navigate to:
 
-http://localhost:3000
+      http://localhost:3000
 
 You should see the Eat & Love & Repeat application running locally.
 
@@ -91,7 +91,7 @@ Product name.
 Price (in DZD).
 Views count.
 Number of times sold.
-Customer reviews section (⭐ ratings and comments).
+Customer reviews section ( ratings and comments).
 "Add to Cart" button.
 
 3.**Shopping Cart Functionality:**
@@ -134,13 +134,13 @@ GitHub Repository Link
 
 [GitHub Repository Link](https://github.com/31773207/eat)
 
-**Group Members**
+## Group Members
 
-## Ould Aroussi Sabrine Hiba
+ Ould Aroussi Sabrine Hiba
 
-## Messaoudi Assia Maroua 
+ Messaoudi Assia Maroua 
 
-## B1
+ B1
 
 Thank you for your time and consideration. Please let me know if you have any questions or need further information.
 
