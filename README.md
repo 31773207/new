@@ -32,6 +32,7 @@ Eat & Love & Repeat is an interactive and dynamic e-commerce application built w
 ✅Step-by-Step Instructions 
 
 **Step 1: Open VS Code**
+
 Launch Visual Studio Code on your machine.
 
 **Step 2: Clone the Git Repository via VS Code**
